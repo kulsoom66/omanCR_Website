@@ -296,18 +296,30 @@
     .about-text  {
         padding-right: calc(((100% - 960px) / 2) + .75rem);
     }
+    #aboutSection {
+        width: 100%;
+    }
+
 }
+@media (max-width: 992px) {
+    #aboutSection {
+        width: 100%;
+    }
+}
+
 
 @media (min-width: 1200px) {
     .about-text  {
         padding-right: calc(((100% - 1140px) / 2) + .75rem);
     }
+
 }
 
 @media (min-width: 1400px) {
     .about-text  {
         padding-right: calc(((100% - 1320px) / 2) + .75rem);
     }
+   
 }
 
 
@@ -319,7 +331,6 @@
 .service-item:hover img {
     transform: scale(1.1);
 }
-
 
 /*** Feature ***/
 @media (min-width: 992px) {
@@ -622,3 +633,6 @@
     color: var(--primary);
 }
 
+#aboutSection{
+    width: 70%;
+}
