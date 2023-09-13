@@ -7,7 +7,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
+<!-- Add this to the <head> section of your HTML document -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<!-- Add this at the end of the <body> section of your HTML document, just before the closing </body> tag -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -30,6 +36,41 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+  
+    <style>
+        /* Hide the navigation buttons */
+        .owl-carousel.header-carousel .owl-nav {
+            display: none !important;
+        }
+
+        /* Set the container to take up the entire screen height */
+.twitter-container {
+    height: 100vh; /* 100% of the viewport height */
+    width: 25%; /* 25% of the viewport width */
+    float: left; /* Float the container to the left so it doesn't take up the full width */
+    overflow: hidden; /* Hide any overflow content */
+    position: relative; /* Set position to relative */
+}
+
+/* Adjust the width of the embedded content to fill the container */
+.twitter-timeline {
+    width: 100%; /* 100% width of the container */
+    height: 100%; /* 100% height of the container */
+}
+
+/* Remove any margin or padding from the embedded content */
+.twitter-timeline iframe {
+    margin: 0;
+    padding: 0;
+}
+
+  
+    </style>
+
+    
+    
+    
 </head>
 
 <body>
@@ -40,37 +81,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>123 Street, New York, USA</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+012 345 6789</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
-
 
 
     <!-- Navbar Start -->
@@ -100,18 +110,65 @@
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
 
             </div>
-            <a href="#sponsor" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">To Sponsor<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="#sponsor" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">To Sponsor</a>
         </div>
     </nav>
     <!-- Navbar End -->
 
-
-    <!-- Carousel Start -->
+        <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid-index" src="img/indexImage.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                <img class="img-fluid-index" src="img/slider1.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .5);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory; Extreme Problem Solvers</p>
+                                <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid-index" src="img/slider2.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .5);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory; Extreme Problem Solvers</p>
+                                <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid-index" src="img/slider3.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .5);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory; Extreme Problem Solvers</p>
+                                <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid-index" src="img/slider4.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .5);">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-8 text-center">
@@ -128,422 +185,255 @@
         </div>
     </div>
     <!-- Carousel End -->
-
-
-    <!-- Feature Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
-                            <i class="fa fa-user-check fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-light mb-0">01</h1>
-                    </div>
-                    <h5>Number of Participates</h5>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-light mb-0">02</h1>
-                    </div>
-                    <h5>Quality Products</h5>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
-                            <i class="fa fa-drafting-compass fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-light mb-0">03</h1>
-                    </div>
-                    <h5>Free Consultation</h5>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
-                            <i class="fa fa-headphones fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-light mb-0">04</h1>
-                    </div>
-                    <h5>Customer Support</h5>
+  
+    <!-- About Start -->
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <!-- Column for the image -->
+            <div class="col-lg-5 ps-lg-0" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/aboutus.png" style="object-fit: cover;" alt="">
                 </div>
             </div>
-        </div>
-    </div> -->
-    <!-- Feature Start -->
-
-
-
-    <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/aboutus.png" style="object-fit: cover;" alt="">
+            <!-- Column for the div beside the image -->
+            <div class="col-lg-7 about-text py-5 wow fadeIn" id="col-lg-6-2" data-wow-delay="0.5s">
+                <div class="p-lg-5 pe-lg-0">
+                    <div class="section-title text-start">
+                        <h1 class="display-5 mb-4">About Us</h1>
                     </div>
-                </div>
-                <div class="col-lg-6-2 about-text py-5 wow fadeIn" data-wow-delay="0.5s" id="aboutSection" style="width: 60%;">
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">About Us</h1>
-                        </div>
-                        <p class="mb-4 pb-2">We are a passionate and dedicated team of tech enthusiasts from Sultant Of Oman. Through hackathons, coding competitions, workshops, and collaborative projects, we aim to provide a platform where individuals from all backgrounds can come together to learn, innovate, and push the boundaries of what's possible in the digital world. Join us on this exciting journey as we explore the limitless possibilities of code and drive positive change in Oman's tech ecosystem. Together, we code for a brighter future!
-                        </p>
+                    <p class="mb-4 pb-2">We are a passionate and dedicated team of tech enthusiasts from Sultant Of Oman. Through hackathons, coding competitions, workshops, and collaborative projects, we aim to provide a platform where individuals from all backgrounds can come together to learn, innovate, and push the boundaries of what's possible in the digital world. Join us on this exciting journey as we explore the limitless possibilities of code and drive positive change in Oman's tech ecosystem. Together, we code for a brighter future!
                         <div class="row g-4 mb-4 pb-2">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-users fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="fw-medium mb-0">Happy Clients</p>
-                                    </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-users fa-2x text-primary"></i>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-check fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="fw-medium mb-0">Projects Done</p>
-                                    </div>
+                                <div class="ms-3">
+                                    <h2 class="text-primary mb-1" data-toggle="counter-up">3500</h2>
+                                    <p class="fw-medium mb-0">Happy Clients</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- <a href="" class="btn btn-primary py-3 px-5">Explore More</a> -->
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-check fa-2x text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="fw-medium mb-0">Projects Done</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- <a href="" class="btn btn-primary py-3 px-5">Explore More</a> -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
+</div>
 
-
-    <!-- Service Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Contests</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">OCPC Oman Collegiate Programming Contest</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">IOI/BEAVER</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">OTHERS</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Service End -->
-
-
-    <!-- Feature Start -->
-    <!-- <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">Why Choose Us</h1>
-                        </div>
-                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                        <div class="row g-4">
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-check fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Quality</p>
-                                        <h5 class="mb-0">Services</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-user-check fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Creative</p>
-                                        <h5 class="mb-0">Designers</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-drafting-compass fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Free</p>
-                                        <h5 class="mb-0">Consultation</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-headphones fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Customer</p>
-                                        <h5 class="mb-0">Support</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Feature End -->
-
+    <!-- About end -->
 
     <!-- Projects Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="section-title text-center">
-                <h1 class="display-5 mb-5" style="margin: 3rem;">Contests</h1>
+                <h1 class="display-5 mb-5" style="margin-top: 2rem;">Contests</h1>
+            </div>
+            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                <!-- <div class="col-12 text-center">
+                    <ul class="list-inline mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">All</li>
+                        <li class="mx-2" data-filter=".second">Custom Carpentry</li>
+                    </ul>
+                </div> -->
             </div>
             <div class="row g-4 portfolio-container">
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                            <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);" src="img/ocpc.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <h5 class="lh-base mb-0">OCPC Competition</a>
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
-
+                        <div class="testimonial-text p-4" style="border: 5px solid var(--light); border-top:none">
+                            <h5 class="lh-base mb-0">OCPC Competition</h5>
+                            <p>Oman Collegiate Programming Contest (OCPC) is an annual programming competition held in the Sultanate of Oman. It serves as a platform for students from universities and colleges to showcase their programming and problem-solving skills.<a href="#"> Read more</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                            <img class="img-fluid-contest w-100" style="border: 5px solid var(--light);border-bottom: none;" src="img/beaver.png" alt="">
                             <div class="portfolio-overlay">
-                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <h5 class="lh-base mb-0">BEAVER/IOI Competition</a>
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-
+                        <div class="testimonial-text  p-4" style="border: 5px solid var(--light);">
+                            <h5 class="lh-base mb-0">BEAVER Competition</h5>
+                            <p>Beaver Challenge is a global program that has a collection of short online problems which seeks to foster the understanding of informatics and computational thinking among students of various ages in schools worldwide.<a href="#"> Read more</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                            <img class="img-fluid-contest w-100" style="border: 5px solid var(--light);border-bottom: none;" src="img/ioi.png" alt="">
                             <div class="portfolio-overlay">
-                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <h5 class="lh-base mb-0">Other Competitions</a>
-                            <p class="text-primary fw-medium mb-2">Others</p>
-
+                        <div class="testimonial-text  p-4" style="border: 5px solid var(--light);">
+                            <h5 class="lh-base mb-0">IOI Competition</h5>
+                            <p>International Olympiad in Informatics is an annual international programming competition for secondary school students, where participants solve different problems. It's one of the most prestigious competitions in the field of competitive programming.<a href="#"> Read more</a>
+                            </p>
                         </div>
-                    </div>
-                </div>
-               
-
-       
-           
-                
-            </div>
-        </div>
-    </div>
-    <!-- Projects End -->
-
-
-    <!-- Quote Start -->
-    <div id="sponsor" class="container-fluid bg-light overflow-hidden my-5 px-lg-0" > 
-        <!-- style="height:600px" -->
-        <div class="container quote px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/sponsor.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 quote-text py-5 wow fadeIn" id="aboutMinS" data-wow-delay="0.5s" >
-                    <!-- width: 60% -->
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">To Sponsor</h1>
-                        </div>
-                        <p class="mb-4 pb-2">If you wish to sponsor us, We greatly appreciate your support and we are excited to explore partnership opportunities that can make this event even more successful. Contact us today to discuss how you can be a part of this exciting journey.</p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Person's Position" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Company's Name" style="height: 55px;">
-                                </div>
-
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Company Field" style="height: 55px;">
-                                </div>
-
-
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Mobile" style="height: 55px;">
-                                </div>
-          
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Quote End -->
 
 
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-5">
+    <div class="container-xxl py-5">
         <div class="container">
             <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Team Members</h1>
+                <h1 class="display-5 mb-5" style="margin-top: 2rem;">Contests</h1>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+            <div class="row g-4 portfolio-container">
+                <div class="col-lg-3 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);"  src="img/ocpc.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
-                        <div class="text-center border border-5 border-light border-top-0 p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
+                        <div class="testimonial-text text-center p-4" style="border: 5px solid var(--light); border-top:none">
+                            <h5 class="lh-base mb-0">OCPC Competition</h5>
+                            <a href="#">Read more</a>
                         </div>
-                    </div>
+                    </div>                </div>
+    
+                <div class="col-lg-3 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);border-bottom: none;" src="img/beaver.png" alt="">
+                            <div class="portfolio-overlay">
+                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="testimonial-text text-center p-4" style="border: 5px solid var(--light);">
+                            <h5 class="lh-base mb-0">BEAVER Competition</h5>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>                </div>
+    
+                <div class="col-lg-3 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);border-bottom: none;" src="img/ioi.png" alt="">
+                            <div class="portfolio-overlay">
+                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="testimonial-text text-center p-4" style="border: 5px solid var(--light);">
+                            <h5 class="lh-base mb-0">GCPC Competition</h5>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>         
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+    
+                <div class="col-lg-3 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);border-bottom: none;" src="img/ioi.png" alt="">
+                            <div class="portfolio-overlay">
+                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
-                        <div class="text-center border border-5 border-light border-top-0 p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
+                        <div class="testimonial-text text-center p-4" style="border: 5px solid var(--light);">
+                            <h5 class="lh-base mb-0">IOI Competition</h5>
+                            <a href="#">Read more</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center border border-5 border-light border-top-0 p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center border border-5 border-light border-top-0 p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
+                    </div>       
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- Team End -->
+    </div>
+    
+    <!-- Projects End -->
+    
 
+    <!-- Quote Start -->
+<div id="sponsor" class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container quote px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <!-- Column for the image -->
+            <div class="col-lg-5 ps-lg-0" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/sponsor.jpg" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <!-- Column for the div beside the image -->
+            <div class="col-lg-7 quote-text py-5-s wow fadeIn" id="aboutMinS" data-wow-delay="0.5s">
+                <div class="p-lg-5-s pe-lg-0">
+                    <div class="section-title text-start">
+                        <h1 class="display-5 mb-4">To Sponsor</h1>
+                    </div>
+                    <p class="mb-4 pb-2">If you wish to sponsor us, We greatly appreciate your support and we are excited to explore partnership opportunities that can make this event even more successful. Contact us today to discuss how you can be a part of this exciting journey.</p>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Name" style="height: 45px; font-size: 14px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Person's Position" style="height: 45px; font-size: 14px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Company's Name" style="height: 45px; font-size: 14px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Company Field" style="height: 45px; font-size: 14px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control border-0" placeholder="Email" style="height: 45px; font-size: 14px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Mobile" style="height: 45px; font-size: 14px;">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-0" placeholder="Special Note" style="font-size: 14px;"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+    <!-- Quote End -->
+
+    
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -554,25 +444,15 @@
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
+                        <p>It was one of the enjoyable aspects of programming, the competitive programming involves using a simple knowledge of programming commands and libraries, along with a deep understanding of logic and probabilities. The competition encourages teamwork for a team of 3 individuals, brainstorming, and exploring the possible outcomes of inputs in a competitive environment and a friendly atmosphere.</p>
+                        <span class="fst-italic">Sultan Qaboos university Student</span>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
+                        <p>Last year, I participated in the OCPC competition. It was a unique and exceptional experience filled with excitement and enthusiastic atmosphere. It was my first time entering the world of competitive programming, and it was an exhilarating experience that I would love to repeat without getting bored! </p>
+                        <span class="fst-italic">Sultan Qaboos university Student</span>
                     </div>
                 </div>
             </div>
@@ -616,6 +496,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>
