@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>OCR</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+<!-- Add this to the <head> section of your HTML document -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<!-- Add this at the end of the <body> section of your HTML document, just before the closing </body> tag -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+  
+    <style>
+        /* Hide the navigation buttons */
+        .owl-carousel.header-carousel .owl-nav {
+            display: none !important;
+        }
+
+        /* Set the container to take up the entire screen height */
+.twitter-container {
+    height: 100vh; /* 100% of the viewport height */
+    width: 25%; /* 25% of the viewport width */
+    float: left; /* Float the container to the left so it doesn't take up the full width */
+    overflow: hidden; /* Hide any overflow content */
+    position: relative; /* Set position to relative */
+}
+
+/* Adjust the width of the embedded content to fill the container */
+.twitter-timeline {
+    width: 100%; /* 100% width of the container */
+    height: 100%; /* 100% height of the container */
+}
+
+/* Remove any margin or padding from the embedded content */
+.twitter-timeline iframe {
+    margin: 0;
+    padding: 0;
+}
+
+  
+    </style>
+
+    
+    
+    
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+   
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary">Oman Code Race</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="registration.html" class="nav-item nav-link">Registration</a>
+                <!-- 
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="image_gallery.html" class="dropdown-item">OCPC/GCPC</a>
+                        <a href="image_gallery_BEAVER.html" class="dropdown-item">BEAVER/IOI</a>
+                        <a href="testimonial.html" class="dropdown-item">Others</a>
+                    </div>
+                </div> -->
+                <!-- <a href="timeline.html" class="nav-item nav-link">Activties</a> -->
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="sponsor.html" class="nav-item nav-link">Become Sponsor?</a>
+
+                <a href="" class="nav-item nav-link">
+                    <select id="selectLang" style="border: none;">
+                        <option value="en" data-i18n="english" selected>ENG</option>
+                        <option value="ar" data-i18n="arabic">ARB</option>
+                    </select>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <div id="sponsor" class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container quote px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <!-- Column for the image -->
+                <div class="col-lg-5 ps-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/sponsor.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <!-- Column for the div beside the image -->
+                <div class="col-lg-7 quote-text py-5-s wow fadeIn" id="aboutMinS" data-wow-delay="0.5s">
+                    <div class="p-lg-5-s pe-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Become Sponsor</h1>
+                        </div>
+                        <p class="mb-4 pb-2">If you wish to sponsor OCR, We greatly appreciate your support and we are excited to explore partnership opportunities that can make this event even more successful. Contact us today to discuss how you can be a part of this exciting journey.</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Name" style="height: 45px; font-size: 14px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Person's Position" style="height: 45px; font-size: 14px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Company's Name" style="height: 45px; font-size: 14px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Company Field" style="height: 45px; font-size: 14px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Email" style="height: 45px; font-size: 14px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Mobile" style="height: 45px; font-size: 14px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Special Note" style="font-size: 14px;"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-md-start mb-3 mb-md-0" style="width: 60%;">
+                        Powered by  <a class="border-bottom" href="https://www.ca-oman.com/">Code Academy-Oman,</a>  
+                        <br>Sponsored by <a class="border-bottom" href="https://mtcit.gov.om/">Ministry of Transport, Communications and Information Technology</a>  
+                        <br> &copy;2023. All Right Reserved
+                    </div>
+                    <div class="col-md-6 text-md-end" style="width: 40%;">
+                        <div class="social-icons" style="margin-right: 1rem;">
+                            <a href="https://twitter.com/ocr_oman" class="social-icon" style="font-size: 24px; margin:1rem;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon" style="font-size: 24px; margin:1rem;"><i class="fab fa-instagram"></i></a>
+                            <!-- Add more social media icons as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>

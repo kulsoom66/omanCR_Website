@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Objectives</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: calc(25% - 20px); /* Adjust the width as needed */
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px); /* Two cards per row on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%; /* Single column on even smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h2>Objective 1</h2>
+            <ul>
+                <li>Creating a qualified generation of Omani youth capable of covering the labor market’s need for professional programmers to work in jobs related to application development, artificial intelligence, information security, and innovation; which depends mainly on programming.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Objective 2</h2>
+            <ul>
+                <li>Developing programming and problem-solving skills using computerized algorithms and applying them using high-end programming languages.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Objective 3</h2>
+            <ul>
+                <li>Training the emerging generation to work under pressure and teamwork through the competitive environment of the competition.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Objective 4</h2>
+            <ul>
+                <li>Introducing the latest developments in the field of algorithms specialized in processing real-life work and projects.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

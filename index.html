@@ -65,7 +65,52 @@
     padding: 0;
 }
 
-  
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  right: 28px;
+  width: 80px;
+  height: 30px;
+}
+
+
+/* The popup form - hidden by default */
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed; /* Set to fixed position to cover the entire viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the element perfectly */
+    z-index: 9;
+    width: 550px;
+}
+
+/* Add styles to the form container */
+.form-container {
+    padding: 10px;
+    background-color: white;
+    border: 3px solid #5554a2;
+    border-radius: 2px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Close button styles */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
     </style>
 
     
@@ -95,9 +140,8 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="contest.html" class="nav-item nav-link">Contests</a>
-                <a href="registrationForm.html" class="nav-item nav-link">Registration</a>
-
+                <a href="registration.html" class="nav-item nav-link">Registration</a>
+<!-- 
                 <div class="nav-item dropdown">
                     <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
                     <div class="dropdown-menu fade-up m-0">
@@ -105,12 +149,18 @@
                         <a href="image_gallery_BEAVER.html" class="dropdown-item">BEAVER/IOI</a>
                         <a href="testimonial.html" class="dropdown-item">Others</a>
                     </div>
-                </div>
-                <a href="timeline.html" class="nav-item nav-link">Activties</a>
+                </div> -->
+                <!-- <a href="timeline.html" class="nav-item nav-link">Activties</a> -->
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="sponsor.html" class="nav-item nav-link">Become Sponsor?</a>
 
+                <a href="" class="nav-item nav-link">
+                    <select id="selectLang" style="border: none;">
+                        <option value="en" data-i18n="english" selected>ENG</option>
+                        <option value="ar" data-i18n="arabic">ARB</option>
+                    </select>
+                </a>
             </div>
-            <a href="#sponsor" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">To Sponsor</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -185,62 +235,13 @@
         </div>
     </div>
     <!-- Carousel End -->
-  
-    <!-- About Start -->
-<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-    <div class="container about px-lg-0">
-        <div class="row g-0 mx-lg-0">
-            <!-- Column for the image -->
-            <div class="col-lg-5 ps-lg-0" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="img/aboutus.png" style="object-fit: cover;" alt="">
-                </div>
-            </div>
-            <!-- Column for the div beside the image -->
-            <div class="col-lg-7 about-text py-5 wow fadeIn" id="col-lg-6-2" data-wow-delay="0.5s">
-                <div class="p-lg-5 pe-lg-0">
-                    <div class="section-title text-start">
-                        <h1 class="display-5 mb-4">About Us</h1>
-                    </div>
-                    <p class="mb-4 pb-2">We are a passionate and dedicated team of tech enthusiasts from Sultant Of Oman. Through hackathons, coding competitions, workshops, and collaborative projects, we aim to provide a platform where individuals from all backgrounds can come together to learn, innovate, and push the boundaries of what's possible in the digital world. Join us on this exciting journey as we explore the limitless possibilities of code and drive positive change in Oman's tech ecosystem. Together, we code for a brighter future!
-                        <div class="row g-4 mb-4 pb-2">
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="d-flex align-items-center">
-                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-users fa-2x text-primary"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h2 class="text-primary mb-1" data-toggle="counter-up">3500</h2>
-                                    <p class="fw-medium mb-0">Happy Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                            <div class="d-flex align-items-center">
-                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-check fa-2x text-primary"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
-                                    <p class="fw-medium mb-0">Projects Done</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <a href="" class="btn btn-primary py-3 px-5">Explore More</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-    <!-- About end -->
 
     <!-- Projects Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" style="background-color: #F5F5F5;">
         <div class="container">
             <div class="section-title text-center">
-                <h1 class="display-5 mb-5" style="margin-top: 2rem;">Contests</h1>
+                <h1 class="display-5 mb-5" style="margin-top: 2rem;">What we have for you</h1>
             </div>
             <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
                 <!-- <div class="col-12 text-center">
@@ -253,51 +254,120 @@
             <div class="row g-4 portfolio-container">
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
+                        <!-- <div class="position-relative overflow-hidden">
                             <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);" src="img/ocpc.jpg" alt="">
                             <div class="portfolio-overlay">
-                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
                         </div>
-                        <div class="testimonial-text p-4" style="border: 5px solid var(--light); border-top:none">
-                            <h5 class="lh-base mb-0">OCPC Competition</h5>
-                            <p>Oman Collegiate Programming Contest (OCPC) is an annual programming competition held in the Sultanate of Oman. It serves as a platform for students from universities and colleges to showcase their programming and problem-solving skills.<a href="#"> Read more</a>
-                            </p>
+                         -->
+                        <div class="testimonial-text p-4" style="border: 5px solid white;">
+                            <h2 class="text-center">Contests</h2>
+                            <ul class="list-unstyled">
+                                <li class="row mb-3">
+                                    <div class="col-md-3">
+                                        <img src="img/ocpc.png" alt="OCPC Image" width="50">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p>Oman Collegiate Programming Contest (OCPC) is an annual...<a href="#"> Read more.</a>
+                                        </div>
+                                </li>
+                                <li class="row mb-3">
+                                    <div class="col-md-3">
+                                        <img src="img/gpc.png" alt="GPC Image" width="50">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p>The Gulf Programming Contest is an annual competitive...  <a href="#">Read more</a>.</p>
+                                    </div>
+                                </li>
+                                <li class="row mb-3">
+                                    <div class="col-md-3">
+                                        <img src="img/oioi.png" alt="OIOI Image" width="50">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p>The Oman Informatics Olympiad (Oman IOI) is a national-level... <a href="#">Read more</a>.</p>
+                                    </div>
+                                </li>
+                                <li class="row">
+                                    <div class="col-md-3">
+                                        <img src="img/beaver.png" alt="Beaver Oman Image" width="50">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p>The Beaver Challenge is a global program that seeks to foster... <a href="#">Read more</a>.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <!-- pop up -->
+                <div class="form-popup"  id="myForm">
+                    <div class="form-container">
+                      <h1>Event Details</h1>
+                      <p>Date and Time: September 25, 2023, 3:00 PM</p>
+                      <!-- Your form content goes here -->
+                      <p>This is your popup content.</p>
+                    </div>
+                    <span class="close-button" onclick="closeForm()">&times;</span>
+                  </div>
+                <!-- end pop -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="testimonial-text p-4" style="border: 5px solid white;">
+                            <h5 class="lh-base mb-0">Events</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <strong>Event 1:</strong> Date and Time
+                                    <!-- <button class="open-button" onclick="openForm()"><Details></Details></button> -->
+                                </li>
+                                <li>
+                                    <strong>Event 2:</strong> Date and Time
+                                    <!-- <button class="open-button" onclick="openForm()"><Details></Details></button> -->
+                                </li>
+                                <!-- Add more events here -->
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid-contest w-100" style="border: 5px solid var(--light);border-bottom: none;" src="img/beaver.png" alt="">
-                            <div class="portfolio-overlay">
-                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="testimonial-text  p-4" style="border: 5px solid var(--light);">
-                            <h5 class="lh-base mb-0">BEAVER Competition</h5>
-                            <p>Beaver Challenge is a global program that has a collection of short online problems which seeks to foster the understanding of informatics and computational thinking among students of various ages in schools worldwide.<a href="#"> Read more</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                
+
+                
 
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
+                        <!-- <div class="position-relative overflow-hidden">
                             <img class="img-fluid-contest w-100" style="border: 5px solid var(--light);border-bottom: none;" src="img/ioi.png" alt="">
                             <div class="portfolio-overlay">
-                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                             </div>
-                        </div>
-                        <div class="testimonial-text  p-4" style="border: 5px solid var(--light);">
-                            <h5 class="lh-base mb-0">IOI Competition</h5>
-                            <p>International Olympiad in Informatics is an annual international programming competition for secondary school students, where participants solve different problems. It's one of the most prestigious competitions in the field of competitive programming.<a href="#"> Read more</a>
-                            </p>
+                        </div> -->
+                        <div class="testimonial-text  p-4" style="border: 5px solid white;"d>
+                            <h5 class="lh-base mb-0">Related Links</h5>
+                            <hr>
+                            <ul>
+                                <li><a href="https://icpc.global/">International Collegiate Programming Contest (ICPC)</a></li>
+                                <li><a href="https://ioinformatics.org/">International Olympiad in Informatics (IOI)</a></li>
+                                <li><a href="https://www.bebrasksa.org/Pages/default.aspx">Bebras Competition</a></li>
+
+                                <!-- Add more competition links here -->
+                            </ul>
+                            <hr>
+                            <ul>
+                                <li><a href="https://codeforces.com/">Codeforce</a></li>
+                            </ul>
+                            <hr>
+                            <ul>
+                                <li><a href="https://mtcit.gov.om/">Ministry of Transport, Communications and Information Technology</a></li>
+                                <li><a href="https://www.ca-oman.com/">Code Academy</a></li>
+                                <!-- Add more sponsor links here -->
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -305,137 +375,11 @@
         </div>
     </div>
 
-
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1 class="display-5 mb-5" style="margin-top: 2rem;">Contests</h1>
-            </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-3 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);"  src="img/ocpc.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="testimonial-text text-center p-4" style="border: 5px solid var(--light); border-top:none">
-                            <h5 class="lh-base mb-0">OCPC Competition</h5>
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>                </div>
-    
-                <div class="col-lg-3 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);border-bottom: none;" src="img/beaver.png" alt="">
-                            <div class="portfolio-overlay">
-                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="testimonial-text text-center p-4" style="border: 5px solid var(--light);">
-                            <h5 class="lh-base mb-0">BEAVER Competition</h5>
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>                </div>
-    
-                <div class="col-lg-3 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);border-bottom: none;" src="img/ioi.png" alt="">
-                            <div class="portfolio-overlay">
-                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="testimonial-text text-center p-4" style="border: 5px solid var(--light);">
-                            <h5 class="lh-base mb-0">GCPC Competition</h5>
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>         
-                </div>
-    
-                <div class="col-lg-3 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid-contest w-100"  style="border: 5px solid var(--light);border-bottom: none;" src="img/ioi.png" alt="">
-                            <div class="portfolio-overlay">
-                                <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="testimonial-text text-center p-4" style="border: 5px solid var(--light);">
-                            <h5 class="lh-base mb-0">IOI Competition</h5>
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>       
-                </div>
-            </div>
-        </div>
-    </div>
-    
     <!-- Projects End -->
     
 
-    <!-- Quote Start -->
-<div id="sponsor" class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-    <div class="container quote px-lg-0">
-        <div class="row g-0 mx-lg-0">
-            <!-- Column for the image -->
-            <div class="col-lg-5 ps-lg-0" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="img/sponsor.jpg" style="object-fit: cover;" alt="">
-                </div>
-            </div>
-            <!-- Column for the div beside the image -->
-            <div class="col-lg-7 quote-text py-5-s wow fadeIn" id="aboutMinS" data-wow-delay="0.5s">
-                <div class="p-lg-5-s pe-lg-0">
-                    <div class="section-title text-start">
-                        <h1 class="display-5 mb-4">To Sponsor</h1>
-                    </div>
-                    <p class="mb-4 pb-2">If you wish to sponsor us, We greatly appreciate your support and we are excited to explore partnership opportunities that can make this event even more successful. Contact us today to discuss how you can be a part of this exciting journey.</p>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Name" style="height: 45px; font-size: 14px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Person's Position" style="height: 45px; font-size: 14px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Company's Name" style="height: 45px; font-size: 14px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Company Field" style="height: 45px; font-size: 14px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control border-0" placeholder="Email" style="height: 45px; font-size: 14px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Mobile" style="height: 45px; font-size: 14px;">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control border-0" placeholder="Special Note" style="font-size: 14px;"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <!-- Quote End -->
-
-    
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" >
         <div class="container">
             <div class="section-title text-center">
                 <h1 class="display-5 mb-5" style="margin: 3rem;">Thoughts and Experiences</h1>
@@ -444,14 +388,14 @@
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>It was one of the enjoyable aspects of programming, the competitive programming involves using a simple knowledge of programming commands and libraries, along with a deep understanding of logic and probabilities. The competition encourages teamwork for a team of 3 individuals, brainstorming, and exploring the possible outcomes of inputs in a competitive environment and a friendly atmosphere.</p>
+                        <p>It was one of the enjoyable aspects of programming, the competitive programming involves using a simple knowledge of programming commands and libraries, along with a deep understanding of logic and probabilities. </p>
                         <span class="fst-italic">Sultan Qaboos university Student</span>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>Last year, I participated in the OCPC competition. It was a unique and exceptional experience filled with excitement and enthusiastic atmosphere. It was my first time entering the world of competitive programming, and it was an exhilarating experience that I would love to repeat without getting bored! </p>
+                        <p>Last year, I participated in the OCPC competition. It was a unique and exceptional experience filled with excitement and enthusiastic atmosphere. </p>
                         <span class="fst-italic">Sultan Qaboos university Student</span>
                     </div>
                 </div>
@@ -466,11 +410,17 @@
         <div class="container">
             <div class="copyright">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                     Powered by  <a class="border-bottom" href="https://www.ca-oman.com/">Code Academy-Oman,</a>     &copy;2023. All Right Reserved
+                    <div class="col-md-6 text-md-start mb-3 mb-md-0" style="width: 60%;">
+                        Powered by  <a class="border-bottom" href="https://www.ca-oman.com/">Code Academy-Oman,</a>  
+                        <br>Sponsored by <a class="border-bottom" href="https://mtcit.gov.om/">Ministry of Transport, Communications and Information Technology</a>  
+                        <br> &copy;2023. All Right Reserved
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <div class="col-md-6 text-md-end" style="width: 40%;">
+                        <div class="social-icons" style="margin-right: 1rem;">
+                            <a href="https://twitter.com/ocr_oman" class="social-icon" style="font-size: 24px; margin:1rem;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon" style="font-size: 24px; margin:1rem;"><i class="fab fa-instagram"></i></a>
+                            <!-- Add more social media icons as needed -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -478,10 +428,19 @@
     </div>
     <!-- Footer End -->
 
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+    </script>
+    
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
