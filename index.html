@@ -7,19 +7,22 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-<!-- Add this to the <head> section of your HTML document -->
+    <!-- Add this to the <head> section of your HTML document -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -36,7 +39,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-  
+
     <style>
         /* Hide the navigation buttons */
         .owl-carousel.header-carousel .owl-nav {
@@ -44,102 +47,118 @@
         }
 
         /* Set the container to take up the entire screen height */
-.twitter-container {
-    height: 100vh; /* 100% of the viewport height */
-    width: 25%; /* 25% of the viewport width */
-    float: left; /* Float the container to the left so it doesn't take up the full width */
-    overflow: hidden; /* Hide any overflow content */
-    position: relative; /* Set position to relative */
-}
+        .twitter-container {
+            height: 100vh;
+            /* 100% of the viewport height */
+            width: 25%;
+            /* 25% of the viewport width */
+            float: left;
+            /* Float the container to the left so it doesn't take up the full width */
+            overflow: hidden;
+            /* Hide any overflow content */
+            position: relative;
+            /* Set position to relative */
+        }
 
-/* Adjust the width of the embedded content to fill the container */
-.twitter-timeline {
-    width: 100%; /* 100% width of the container */
-    height: 100%; /* 100% height of the container */
-}
+        /* Adjust the width of the embedded content to fill the container */
+        .twitter-timeline {
+            width: 100%;
+            /* 100% width of the container */
+            height: 100%;
+            /* 100% height of the container */
+        }
 
-/* Remove any margin or padding from the embedded content */
-.twitter-timeline iframe {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  border: none;
-  cursor: pointer;
-  right: 28px;
-  width: 80px;
-  height: 30px;
-}
+        /* Remove any margin or padding from the embedded content */
+        .twitter-timeline iframe {
+            margin: 0;
+            padding: 0;
+        }
 
 
-/* The popup form - hidden by default */
-/* The popup form - hidden by default */
-.form-popup {
-    display: none;
-    position: fixed; /* Set to fixed position to cover the entire viewport */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the element perfectly */
-    z-index: 9;
-    width: 550px;
-}
-
-/* Add styles to the form container */
-.form-container {
-    padding: 10px;
-    background-color: white;
-    border: 3px solid #5554a2;
-    border-radius: 2px;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-
-/* Close button styles */
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    font-size: 30px;
-    cursor: pointer;
-}
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+            right: 28px;
+            width: 80px;
+            height: 30px;
+        }
 
 
-.rectangle-box {
-    width: 90%; /* Set the width of the rectangle */
-    height: auto; /* Set the height of the rectangle */
-    margin: 2rem;
-    background-color: #fff; /* Set the background color */
-    border-left: 5px solid #5554a2; /* Add a border with a color */
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex; /* Use flexbox to align items horizontally */
-    align-items: center; /* Center-align items vertically */
-}
+        /* The popup form - hidden by default */
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            /* Set to fixed position to cover the entire viewport */
+            top: 50%;
+            /* Center vertically */
+            left: 50%;
+            /* Center horizontally */
+            transform: translate(-50%, -50%);
+            /* Center the element perfectly */
+            z-index: 9;
+            width: 550px;
+        }
 
-.space{
-    margin-right: 5px;
-}
-.list-group-item {
-    border: none !important;
-}
+        /* Add styles to the form container */
+        .form-container {
+            padding: 10px;
+            background-color: white;
+            border: 3px solid #5554a2;
+            border-radius: 2px;
+        }
+
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover,
+        .open-button:hover {
+            opacity: 1;
+        }
+
+        /* Close button styles */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+
+        .rectangle-box {
+            width: 90%;
+            /* Set the width of the rectangle */
+            height: auto;
+            /* Set the height of the rectangle */
+            margin: 2rem;
+            background-color: #fff;
+            /* Set the background color */
+            border-left: 5px solid #5554a2;
+            /* Add a border with a color */
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+            /* Use flexbox to align items horizontally */
+            align-items: center;
+            /* Center-align items vertically */
+        }
+
+        .space {
+            margin-right: 5px;
+        }
+
+        .list-group-item {
+            border: none !important;
+        }
     </style>
-
-    
-    
-    
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -162,7 +181,6 @@
                 <a href="registration.html" class="nav-item nav-link">Registration</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
                 <a href="sponsor.html" class="nav-item nav-link">SPONSORSHIP</a>
-                <a href="volunteerRegistration.html" class="nav-item nav-link">VOLUNTEER</a>
                 <a href="" class="nav-item nav-link">
                     <select id="selectLang" style="border: none;">
                         <option value="en" data-i18n="english" selected>ENG</option>
@@ -174,18 +192,20 @@
     </nav>
     <!-- Navbar End -->
 
-        <!-- Carousel Start -->
+    <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid-index" src="img/slider1.jpeg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .5);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, .5);">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-8 text-center">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory; Extreme Problem Solvers</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                    Extreme Problem Solvers</p>
                                 <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
                             </div>
@@ -195,13 +215,15 @@
             </div>
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid-index" src="img/slider2.jpeg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .5);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, .5);">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-8 text-center">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory; Extreme Problem Solvers</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                    Extreme Problem Solvers</p>
                                 <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
                             </div>
@@ -211,13 +233,15 @@
             </div>
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid-index" src="img/slider3.jpeg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .5);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, .5);">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-8 text-center">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory; Extreme Problem Solvers</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                    Extreme Problem Solvers</p>
                                 <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
                             </div>
@@ -227,13 +251,15 @@
             </div>
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid-index" src="img/slider4.jpeg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .5);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, .5);">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-8 text-center">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory; Extreme Problem Solvers</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                    Extreme Problem Solvers</p>
                                 <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
                             </div>
@@ -244,14 +270,14 @@
         </div>
     </div>
     <!-- Carousel End -->
-    
+
 
 
 
     <!-- Projects Start -->
     <div class="container-xxl py-5" style="background-color: #F5F5F5; padding-top:3rem;">
         <div class="container">
-            <div class="section-title text-center" >
+            <div class="section-title text-center">
                 <h3 class="text-primary mb-5">OCR Contests</h3>
             </div>
             <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
@@ -261,7 +287,8 @@
                 <div class="col-lg-3 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid-contest w-100" src="img/space_beaver.png" alt="" style="max-height: 150px;">
+                            <img class="img-fluid-contest w-100" src="img/space_beaver.png" alt=""
+                                style="max-height: 150px;">
                             <div class="portfolio-overlay">
                                 <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
@@ -269,7 +296,9 @@
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <h6 class="lh-base mb-0">Beaver Contest</h6>
-                            <p>It is a program that seeks to foster the understanding of informatics and computational thinking among students of various ages in schools<a href="beaver_overview.html"> Read more</a></p>
+                            <p>It is a program that seeks to foster the understanding of informatics and computational
+                                thinking among students of various ages in schools<a href="beaver_overview.html"> Read
+                                    more</a></p>
 
                         </div>
                     </div>
@@ -279,15 +308,19 @@
                 <div class="col-lg-3 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid-contest w-100" src="img/space_oioi.png" alt="" style="max-height: 150px;">
+                            <img class="img-fluid-contest w-100" src="img/space_oioi.png" alt=""
+                                style="max-height: 150px;">
                             <div class="portfolio-overlay">
                                 <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                                <a class="btn btn-square btn-outline-light mx-1" href="oioi_overview.html"><i class="fa fa-link"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href="oioi_overview.html"><i
+                                        class="fa fa-link"></i></a>
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <h6 class="lh-base mb-0">OIOI Contest</h6>
-                            <p>It is contest for general education school students to compete in solving a set of real-life problems that require the design of computer algorithms <a href="oioi_overview.html">Read more</a>
+                            <p>It is contest for general education school students to compete in solving a set of
+                                real-life problems that require the design of computer algorithms <a
+                                    href="oioi_overview.html">Read more</a>
                             </p>
                         </div>
                     </div>
@@ -295,7 +328,8 @@
                 <div class="col-lg-3 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid-contest w-100" src="img/space_ocpc.png" alt="" style="max-height: 150px;"> <!-- Adjust the max-height as needed -->
+                            <img class="img-fluid-contest w-100" src="img/space_ocpc.png" alt=""
+                                style="max-height: 150px;"> <!-- Adjust the max-height as needed -->
                             <div class="portfolio-overlay">
                                 <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
@@ -303,7 +337,8 @@
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <h6 class="lh-base mb-0">OCPC Contest</h6>
-                            <p>It is a platform where university and college students can showcase their problem-solving skills in a competitive environment <a href="#"> Read more</a>
+                            <p>It is a platform where university and college students can showcase their problem-solving
+                                skills in a competitive environment <a href="ocpc/ocpc_overview.html"> Read more</a>
                             </p>
                         </div>
                     </div>
@@ -312,7 +347,8 @@
                 <div class="col-lg-3 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid-contest w-100" src="img/space_gpc.png" alt="" style="max-height: 150px;">
+                            <img class="img-fluid-contest w-100" src="img/space_gpc.png" alt=""
+                                style="max-height: 150px;">
                             <div class="portfolio-overlay">
                                 <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
@@ -320,7 +356,8 @@
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <h6 class="lh-base mb-0">GPC Contest</h6>
-                            <p>It brings together talented students and programmers from gulf countries to solve challenging algorithmic problems within a set time limit. <a href="#"> Read more</a></p>
+                            <p>It brings together talented students and programmers from gulf countries to solve
+                                challenging algorithmic problems within a set time limit. <a href="#"> Read more</a></p>
                         </div>
                     </div>
                 </div>
@@ -328,10 +365,12 @@
         </div>
     </div>
     <!-- Projects End -->
+
+    <!-- Events Start -->
     <div class="container-xxl py-5" style="background-color: #F5F5F5; display: flex;">
         <div class="container" style="padding: 10px; ">
-        <!-- HTML for the rectangle box -->
-            <div class="section-title text-center" >
+            <!-- HTML for the rectangle box -->
+            <div class="section-title text-center">
                 <h3 class="text-primary mb-5">OCR Events</h3>
             </div>
             <div class="rectangle-box wow fadeIn">
@@ -341,8 +380,9 @@
                     <!-- List Group -->
                     <ul class="list-group">
                         <li class="list-group-item d-flex align-items-center">
-                            <span><i class="space fas fa-clock clock-icon mr-2"></i>31st.Oct - 1st.Nov, 2023</span>
-                            <span><i class="space fas fa-map-marker-alt location-icon mr-2" style="margin-left: 10px;"></i>Sultan Qaboos University</span>
+                            <span><i class="space fas fa-clock clock-icon mr-2"></i>28th.Oct - 29th.Oct, 2023</span>
+                            <span><i class="space fas fa-map-marker-alt location-icon mr-2"
+                                    style="margin-left: 10px;"></i>Sultan Qaboos University</span>
                         </li>
                     </ul>
                 </div>
@@ -356,7 +396,8 @@
                     <ul class="list-group">
                         <li class="list-group-item d-flex align-items-center">
                             <span><i class="space fas fa-clock clock-icon mr-2"></i>31st.Oct - 1st.Nov, 2023</span>
-                            <span><i class="space fas fa-map-marker-alt location-icon mr-2" style="margin-left: 10px;"></i>Sultan Qaboos University</span>
+                            <span><i class="space fas fa-map-marker-alt location-icon mr-2"
+                                    style="margin-left: 10px;"></i>Sultan Qaboos University</span>
                         </li>
                     </ul>
                 </div>
@@ -369,42 +410,42 @@
                     <!-- List Group -->
                     <ul class="list-group">
                         <li class="list-group-item d-flex align-items-center">
-                            <span><i class="space fas fa-clock clock-icon mr-2"></i>31st.Oct - 1st.Nov, 2023</span>
-                            <span><i class="space fas fa-map-marker-alt location-icon mr-2" style="margin-left: 10px;"></i>Sultan Qaboos University</span>
+                            <span><i class="space fas fa-clock clock-icon mr-2"></i>3rd.Nov - 4th.Nov, 2023</span>
+                            <span><i class="space fas fa-map-marker-alt location-icon mr-2"
+                                    style="margin-left: 10px;"></i>Sultan Qaboos University</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-<!-- 
-        <div class="container" style=" padding: 10px; width: 40%;">
-            <div style="height: 400px; overflow: auto;">
-                <a class="twitter-timeline" href="https://twitter.com/ocr_oman?ref_src=twsrc%5Etfw">Tweets by ocr_oman</a> 
-            </div>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div> -->
     </div>
+    <!-- Events End -->
 
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" >
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="section-title text-center">
                 <h3 class="text-primary mb-5" style="margin: 3rem;">Thoughts and Experiences</h3>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg"
+                        style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>It was one of the enjoyable aspects of programming, the competitive programming involves using a simple knowledge of programming commands and libraries, along with a deep understanding of logic and probabilities. </p>
+                        <p>It was one of the enjoyable aspects of programming, the competitive programming involves
+                            using a simple knowledge of programming commands and libraries, along with a deep
+                            understanding of logic and probabilities. </p>
                         <span class="fst-italic">Sultan Qaboos university Student</span>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg"
+                        style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>Last year, I participated in the OCPC competition. It was a unique and exceptional experience filled with excitement and enthusiastic atmosphere. </p>
+                        <p>Last year, I participated in the OCPC competition. It was a unique and exceptional experience
+                            filled with excitement and enthusiastic atmosphere. </p>
                         <span class="fst-italic">Sultan Qaboos university Student</span>
                     </div>
                 </div>
@@ -415,152 +456,137 @@
 
 
     <!-- Footer Start Boostrap -->
-    <!-- Remove the container if you want to extend the Footer to full width. -->
-    <!-- Footer -->
-        <footer
-                class="text-center text-lg-start text-white"
-                style="background-color: #353535"
-                >
-        <!-- Grid container -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #353535">
         <div class="container p-4 pb-0">
             <!-- Section: Links -->
             <section class="">
-            <!--Grid row-->
-            <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold" style="color: white;">
-                        Sponsers
-                </h6>
-                <p>
-                    Powered by  <a  href="https://www.ca-oman.com/">Code Academy-Oman,</a>  
-                    <br>Sponsored by <a  href="https://mtcit.gov.om/">MTCIT</a>  
-                </p>
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold" style="color: white;">
+                            Sponsers
+                        </h6>
+                        <p>
+                            Powered by <a href="https://www.ca-oman.com/">Code Academy-Oman,</a>
+                            <br>Sponsored by <a href="https://mtcit.gov.om/">MTCIT</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold" style="color: white;">
+                            Useful Websites</h6>
+                        <p>
+                            <a>Codeforce website</a>
+                        <ul>
+                            <li>
+                                <a href="https://codeforces.com/">Codeforces</a>
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold" style="color: white;">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a>International Well Known Contests</a>
+                        <ul>
+                            <li><a href="https://icpc.global/">International Collegiate Programming Contest (ICPC)</a>
+                            </li>
+                            <li><a href="https://ioinformatics.org/">International Olympiad in Informatics (IOI)</a>
+                            </li>
+                            <li><a href="https://www.bebrasksa.org/Pages/default.aspx">Bebras Competition</a></li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold" style="color: white;">
+                            Contact</h6>
+                        <p><i class="fas fa-home mr-3"></i> J4JP+VR, Seeb, Mabeela North</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@ca-oman.net</p>
+                        <p><i class="fas fa-phone mr-3"></i> +968 97451004</p>
+                    </div>
+                    <!-- Grid column -->
                 </div>
-                <!-- Grid column -->
-    
-                <hr class="w-100 clearfix d-md-none" />
-    
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold" style="color: white;">
-                        Useful Websites</h6>
-                <p>              
-                    <a>Codeforce website</a>
-                    <ul>
-                        <li>
-                            <a href="https://codeforces.com/">Codeforces</a>
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-                <!-- Grid column -->
-    
-                <hr class="w-100 clearfix d-md-none" />
-    
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold" style="color: white;">
-                        Useful links
-                </h6>
-                <p>
-                    <a>International Well Known Contests</a>
-                    <ul>
-                        <li><a href="https://icpc.global/">International Collegiate Programming Contest (ICPC)</a></li>
-                        <li><a href="https://ioinformatics.org/">International Olympiad in Informatics (IOI)</a></li>
-                        <li><a href="https://www.bebrasksa.org/Pages/default.aspx">Bebras Competition</a></li>
-                    </ul>
-                </p>
-                </div>
-    
-                <!-- Grid column -->
-                <hr class="w-100 clearfix d-md-none" />
-    
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold" style="color: white;">
-                        Contact</h6>
-                <p><i class="fas fa-home mr-3"></i> J4JP+VR, Seeb, Mabeela North</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@ca-oman.net</p>
-                <p><i class="fas fa-phone mr-3"></i> +968 97451004</p>
-                </div>
-                <!-- Grid column -->
-            </div>
-            <!--Grid row-->
+                <!--Grid row-->
             </section>
             <!-- Section: Links -->
-    
+
             <hr class="my-3">
-    
+
             <!-- Section: Copyright -->
             <section class="p-3 pt-0">
-            <div class="row d-flex align-items-center">
-                <!-- Grid column -->
-                <div class="col-md-7 col-lg-8 text-center text-md-start">
-                <!-- Copyright -->
-                <div class="p-3">
-                    &copy;2023. All Right Reserved
-                </div>
-                <!-- Copyright -->
-                </div>
-                <!-- Grid column -->
-    
-                <!-- Grid column -->
-                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <!-- Facebook -->
-                <a
+                <div class="row d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <!-- Copyright -->
+                        <div class="p-3">
+                            &copy;2023. All Right Reserved
+                        </div>
+                        <!-- Copyright -->
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <!-- Facebook -->
+                        <!-- <a
                     class="btn btn-outline-light btn-floating m-1"
                     class="text-white"
                     role="button"
                     ><i class="fab fa-facebook-f"></i
-                    ></a>
-    
-                <!-- Twitter -->
-                <a
-                    class="btn btn-outline-light btn-floating m-1"
-                    class="text-white"
-                    role="button"
-                    ><i class="fab fa-twitter"></i
-                    ></a>
-    
-                <!-- Google -->
-                <a
+                    ></a> -->
+
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"
+                            href="https://x.com/ocr_oman?s=20"><i class="fab fa-twitter"></i></a>
+
+                        <!-- Google -->
+                        <!-- <a
                     class="btn btn-outline-light btn-floating m-1"
                     class="text-white"
                     role="button"
                     ><i class="fab fa-google"></i
                     ></a>
-    
-                <!-- Instagram -->
-                <a
-                    class="btn btn-outline-light btn-floating m-1"
-                    class="text-white"
-                    role="button"
-                    ><i class="fab fa-instagram"></i
-                    ></a>
+                    -->
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"
+                            href="https://www.instagram.com/codeacademy_om/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <!-- Grid column -->
                 </div>
-                <!-- Grid column -->
-            </div>
             </section>
             <!-- Section: Copyright -->
         </div>
         <!-- Grid container -->
-        </footer>
-        <!-- Footer -->
-    <!-- End of .container -->
-
+    </footer>
     <!-- Footer End Boostrap -->
 
     <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
-          }
-          
-          function closeForm() {
+        }
+
+        function closeForm() {
             document.getElementById("myForm").style.display = "none";
-          }
+        }
     </script>
-    
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -578,7 +604,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    
-</body>
 
+</body>
 </html>
