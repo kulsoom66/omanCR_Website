@@ -79,22 +79,20 @@
         <a href="registration.html" class="nav-item nav-link">Registration</a>
         <a href="contact.html" class="nav-item nav-link">Contact</a>
         <a href="sponsor.html" class="nav-item nav-link">SPONSORSHIP</a>
-        <a href="" class="nav-item nav-link">
           <select id="selectLang" style="border: none;">
             <option value="en" data-i18n="english" selected>ENG</option>
             <option value="ar" data-i18n="arabic">ARB</option>
           </select>
-        </a>
+     
       </div>
     </div>
   </nav>
   <!-- Navbar End -->
 
   <div class="text-center px-4 px-lg-5" style="margin-top: 3rem;">
-    <h2 class="m-0 text-primary">OCR Contests Registration Links</h2>
+    <h2 class="m-0 text-primary" data-i18n="contestRegistrationTitle">OCR Contests Registration Links</h2>
   </div>
   <div class="timeline">
-
     <div class="timeline__event animated fadeInUp delay-3s timeline__event--type3">
       <div class="timeline__event__icon">
         <div class="timeline__event__date"></div>
@@ -105,15 +103,12 @@
           <img src="img/oioi.png" style="width: 50px; height:40px" alt="Logo 3">
         </div>
         <div class="compLink">
-
-          <div class="timeline__event__title">
-            Beaver and OIOI
-            <br>
-          </div>
+          <div class="timeline__event__title" data-i18n="beaverOioiTitle">Beaver and OIOI</div>
           <div class="timeline__event__description">
             <p>
               <i class="fas fa-link"></i>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbqJ3HGPbxhDBXbmxSlzrY9VyQcZAiYaVmwBybAqDAGzaBvw/viewform?usp=pp_url">OIOI and Beaver Registration Link</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbqJ3HGPbxhDBXbmxSlzrY9VyQcZAiYaVmwBybAqDAGzaBvw/viewform?usp=pp_url"
+                data-i18n="beaverOioiLink">OIOI and Beaver Registration Link</a>
             </p>
           </div>
         </div>
@@ -127,24 +122,20 @@
         <div class="imgLogo">
           <img src="img/ocpc.jpg" style="width: 50px; height:40px" alt="Logo 3">
           <img src="img/gpc.png" style="width: 50px; height:40px" alt="Logo 3">
-
         </div>
         <div class="compLink">
-          <div class="timeline__event__title">
-            OCPC and GPC
-            <br>
-          </div>
+          <div class="timeline__event__title" data-i18n="ocpcGpcTitle">OCPC and GPC</div>
           <div class="timeline__event__description">
             <p>
               <i class="fas fa-link"></i>
-              <a href="https://forms.gle/uipkdDuccKLCm8yt9">OCPC and GPC Registration Link</a>
+              <a href="https://forms.gle/uipkdDuccKLCm8yt9" data-i18n="ocpcGpcLink">OCPC and GPC Registration Link</a>
             </p>
           </div>
         </div>
-
       </div>
     </div>
   </div>
+  
 
   <!-- Footer Start Boostrap -->
   <footer class="text-center text-lg-start text-white" style="background-color: #353535">
@@ -286,6 +277,12 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
+
+<!-- Template Javascript -->
+<script src="registrationDict.js"></script>
+
+
+
 </body>
 
 </html>

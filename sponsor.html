@@ -108,12 +108,10 @@
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
                 <a href="sponsor.html" class="nav-item nav-link">SPONSORSHIP</a>
 
-                <a href="" class="nav-item nav-link">
-                    <select id="selectLang" style="border: none;">
-                        <option value="en" data-i18n="english" selected>ENG</option>
-                        <option value="ar" data-i18n="arabic">ARB</option>
-                    </select>
-                </a>
+                <select id="selectLang" style="border: none;">
+                    <option value="en" data-i18n="english" selected>ENG</option>
+                    <option value="ar" data-i18n="arabic">ARB</option>
+                </select>
             </div>
         </div>
     </nav>
@@ -132,46 +130,53 @@
                 <div class="col-lg-7 quote-text py-5-s wow fadeIn" id="aboutMinS" data-wow-delay="0.5s">
                     <div class="p-lg-5-s pe-lg-0">
                         <div class="section-title text-start">
-                            <h3 class="text-primary mb-5">Become Sponsor</h3>
+                            <h3 class="text-primary mb-5" data-i18n="sponsorshipHeading">Become Sponsor</h3>
                         </div>
-                        <p class="mb-4 pb-2">If you wish to sponsor OCR, We greatly appreciate your support and we are
+                        <p class="mb-4 pb-2" data-i18n="sponsorshipMessage">
+                            If you wish to sponsor OCR, We greatly appreciate your support and we are
                             excited to explore partnership opportunities that can make this event even more successful.
-                        Pleass fill the following form and we will be in contact with you shortly.</p>
+                            Please fill the following form, and we will be in contact with you shortly.
+                        </p>
                         <form action="sponsor.php" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control border-0" name="name" placeholder="Full Name"
-                                        style="height: 45px; font-size: 14px;">
+                                        style="height: 45px; font-size: 14px;" data-i18n="fullName">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" name="position" placeholder="Person's Position"
-                                        style="height: 45px; font-size: 14px;">
+                                    <input type="text" class="form-control border-0" name="position"
+                                        placeholder="Person's Position" style="height: 45px; font-size: 14px;"
+                                        data-i18n="personPosition">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" name="company" placeholder="Company's Name"
-                                        style="height: 45px; font-size: 14px;">
+                                    <input type="text" class="form-control border-0" name="company"
+                                        placeholder="Company's Name" style="height: 45px; font-size: 14px;"
+                                        data-i18n="companyName">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" name="field" placeholder="Company Field"
-                                        style="height: 45px; font-size: 14px;">
+                                    <input type="text" class="form-control border-0" name="field"
+                                        placeholder="Company Field" style="height: 45px; font-size: 14px;"
+                                        data-i18n="companyField">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="email" class="form-control border-0" name="email" placeholder="Email"
-                                        style="height: 45px; font-size: 14px;">
+                                        style="height: 45px; font-size: 14px;" data-i18n="email">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control border-0" name="mobile" placeholder="Mobile"
-                                        style="height: 45px; font-size: 14px;">
+                                        style="height: 45px; font-size: 14px;" data-i18n="mobile">
                                 </div>
                                 <div class="col-12">
                                     <textarea class="form-control border-0" placeholder="Special Note" name="note"
-                                        style="font-size: 14px;"></textarea>
+                                        style="font-size: 14px;" data-i18n="specialNote"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit"
+                                        data-i18n="submitBtn">Submit</button>
                                 </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -317,6 +322,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="sponsorDict.js"></script>
 
 </body>
 
