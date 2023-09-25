@@ -8325,3 +8325,20 @@ a[data-toggle="collapse"] {
   .btn.btn-primary:hover, .btn.btn-primary:focus {
     background: #5554a2 !important;
     border-color: #5554a2 !important; }
+
+
+    figure {
+      position: relative;
+      text-align: center;
+    }
+
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      font-size: 14px;
+      width: 100%;
+    }
+    
