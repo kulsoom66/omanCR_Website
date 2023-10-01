@@ -48,7 +48,7 @@ const translations = {
         contact: "التواصل",
         sponsor: "الدعم",
         sponsorshipHeading: "كن راعياً",
-        sponsorshipMessage: "إذا كنت ترغب في رعاية تقنية التعرف الضوئي على الحروف (OCR)، فنحن نقدر دعمك بشدة ونحن متحمسون لاستكشاف فرص الشراكة التي يمكن أن تجعل هذا الحدث أكثر نجاحًا. برجاء ملء النموذج التالي، وسنتواصل معك قريبًا.", // Add the Arabic translation for the message
+        sponsorshipMessage: "إذا كنت ترغب في رعاية سباق عمان للبرمجة (OCR)، فنحن نقدر دعمك بشدة ونحن متحمسون لاستكشاف فرص الشراكة التي يمكن أن تجعل هذا الحدث أكثر نجاحًا. الرجاء ملء الاستمارة التالية، وسنتواصل معك قريبًا.", // Add the Arabic translation for the message
         fullName: "الاسم الكامل",
         personPosition: "موقع الشخص",
         companyName: "اسم الشركة",

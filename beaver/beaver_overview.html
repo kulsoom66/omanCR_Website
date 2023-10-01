@@ -11,7 +11,33 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    .icon-and-link {
+      display: flex;
+      align-items: center;
+      /* Vertically center the content */
+    }
 
+    .icon-and-link .fa {
+      margin-right: 5px;
+    }
+
+    /* Style for stacking elements when sidebar is not active */
+    #sidebar:not(.active) ul li span,
+    #sidebar:not(.active) ul li a {
+      display: block;
+      /* Stack elements above each other */
+    }
+
+    /* Style for displaying elements side by side with margin when sidebar is active */
+    #sidebar.active ul li span,
+    #sidebar.active ul li a {
+      display: inline-block;
+      /* Display elements side by side */
+      margin-right: 10px;
+      /* Add margin between them */
+    }
+  </style>
 </head>
 
 <body>
@@ -19,36 +45,39 @@
   <div class="wrapper d-flex align-items-stretch">
     <nav id="sidebar" class="active">
       <!-- <h1><a href="../index.html" class="logo">OCPC</a></h1> -->
-
-
-
       <a class="logo" href="#">
         <img src="beaver.png" alt="Your Logo" width="60" height="50">
       </a>
 
+      <ul class="list-unstyled components mb-5" id="toRight">
 
-
-      <ul class="list-unstyled components mb-5">
         <li class="active">
-          <a href="beaver_overview.html"><span class="fa fa-home"></span>Overview</a>
+          <a href="beaver_overview.html" id="toRight" data-i18n="navOverview"><span id="toRight" class="fa fa-home"></span>Overview</a>
+        </li>
+
+        <li>
+          <a href="beaver_objectives.html" id="toRight" data-i18n="navObjectives"><span class="fa fa-user"></span>Objectives</a>
         </li>
         <li>
-          <a href="beaver_objectives.html"><span class="fa fa-user"></span>Objectives</a>
+          <a href="beaver_schedule.html" id="toRight" data-i18n="navSchedule">Schedule<span
+              class="fa fa-cogs"></span></a>
         </li>
         <li>
-          <a href="beaver_schedule.html"><span class="fa fa-cogs"></span>Schedule</a>
+          <a href="beaver_target_group.html" id="toRight" data-i18n="navTargetGroup"><span
+              class="fa fa-user"></span>Target Group</a>
         </li>
         <li>
-          <a href="beaver_target_group.html"><span class="fa fa-user"></span>Target Group</a>
+          <a href="https://www.beaveregypt.org/practice" id="toRight" data-i18n="navPastProblems"><span
+              class="fa fa-paper-plane"></span>Past Problems</a>
         </li>
         <li>
-          <a href="https://www.beaveregypt.org/practice"><span class="fa fa-paper-plane"></span>Past Problems</a>
+          <a href="beaver_gallery.html" id="toRight" data-i18n="navGallery"><span
+              class="fa fa-sticky-note"></span>Gallery</a>
         </li>
         <li>
-          <a href="beaver_gallery.html"><span class="fa fa-sticky-note"></span>Gallery</a>
-        </li>
-        <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbqJ3HGPbxhDBXbmxSlzrY9VyQcZAiYaVmwBybAqDAGzaBvw/viewform?usp=pp_url"><span class="fa fa-paper-plane"></span>Register</a>
+          <a id="toRight"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdbqJ3HGPbxhDBXbmxSlzrY9VyQcZAiYaVmwBybAqDAGzaBvw/viewform?usp=pp_url"
+            data-i18n="navRegister"><span class="fa fa-paper-plane"></span>Register</a>
         </li>
       </ul>
 
@@ -60,7 +89,6 @@
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-
           <button type="button" id="sidebarCollapse" class="btn btn-primary">
             <i class="fa fa-bars"></i>
             <span class="sr-only">Toggle Menu</span>
@@ -89,12 +117,10 @@
                 <a href="../sponsor.html" class="nav-link">SPONSORSHIP</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
-                  <select id="selectLang" style="border: none;">
-                    <option value="en" data-i18n="english" selected>ENG</option>
-                    <option value="ar" data-i18n="arabic">ARB</option>
-                  </select>
-                </a>
+                <select id="selectLang" style="border: none;">
+                  <option value="en" data-i18n="english" selected>ENG</option>
+                  <option value="ar" data-i18n="arabic">ARB</option>
+                </select>
               </li>
 
             </ul>
@@ -102,16 +128,16 @@
         </div>
       </nav>
 
-      <h2 class="mb-4 ml-4">Beaver Overview</h2>
-      <p class="mb-4 ml-4">The Beaver Challenge is a global program
-        that seeks to foster the understanding of informatics and computational
-        thinking among students of various ages in schools worldwide. With a presence
-        in more than 50 countries and a participation of 3 million students, this initiative
-        is specifically designed to ignite enthusiasm for the field of computing in every student.</p>
-        
-    <div >
-      <img style="height: 80%; width: 100%" src="img/beaverimg.png" alt="no">
-    </div>
+      <h2 class="mb-4 ml-4" id="toRight" data-i18n="beaverOverviewTitle">Beaver Overview</h2>
+      <p class="mb-4 ml-4" id="toRight" data-i18n="beaverOverviewDescription">The Beaver Challenge is a global program
+        that seeks to foster the understanding of informatics and computational thinking among students of various ages
+        in schools worldwide. With a presence in more than 50 countries and a participation of 3 million students, this
+        initiative is specifically designed to ignite enthusiasm for the field of computing in every student.</p>
+
+
+      <div>
+        <img style="height: 80%; width: 100%" src="img/beaverimg.png" alt="no">
+      </div>
     </div>
 
   </div>
@@ -217,6 +243,7 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="beaver_overview.js"></script>
 </body>
 
 </html>

@@ -9,9 +9,9 @@ const translations = {
 	
 
         contestRegistrationTitle: 'OCR Contests Registration Links',
-        beaverOioiTitle: 'Beaver and OIOI',
+        // beaverOioiTitle: 'Beaver and OIOI',
         beaverOioiLink: 'OIOI and Beaver Registration Link',
-        ocpcGpcTitle: 'OCPC and GPC',
+        // ocpcGpcTitle: 'OCPC and GPC',
         ocpcGpcLink: 'OCPC and GPC Registration Link',
 
 
@@ -45,10 +45,10 @@ const translations = {
 		sponsor: "الدعم",
 
         contestRegistrationTitle: 'روابط تسجيل مسابقات OCR',
-        beaverOioiTitle: 'بيفر وOIOI',
-        beaverOioiLink: 'رابط تسجيل OIOI وبيفر',
-        ocpcGpcTitle: 'OCPC وGPC',
-        ocpcGpcLink: 'رابط تسجيل OCPC وGPC',
+        // beaverOioiTitle: 'بيفر وOIOI',
+        beaverOioiLink: 'رابط التسجيل لمسابقة القندس والأولمبياد العماني للمعلوماتية',
+        // ocpcGpcTitle: 'OCPC وGPC',
+        ocpcGpcLink: 'رابط التسجيل لمسابقة عمان الجامعية للبرمجة و مسابقة الخليج للبرمجة',
 
 
         

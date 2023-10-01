@@ -69,11 +69,11 @@ const translations = {
 		
 		ocrcContestsTitle: 'سباق عمان للبرمجة',
 		beaverContestTitle: 'مسابقة القندس',
-		beaverContestDescription: 'إنها برنامج يسعى إلى تعزيز فهم الإعلامية والتفكير الحسابي بين الطلاب من مختلف الأعمار في المدارس. اقرأ المزيد',
+		beaverContestDescription: 'مسابقة تسعى إلى تعزيز فهم المعلوماتية والتفكير الحسابي بين الطلاب من مختلف الأعمار في مدارس السلطنة. اقرأ المزيد',
 		oioiContestTitle: 'الأولمبياد العماني للمعلوماتي',
-		oioiContestDescription: 'إنها مسابقة لطلاب المدارس التعليمية العامة للمنافسة في حل مجموعة من المشكلات الواقعية التي تتطلب تصميم خوارزميات الكمبيوتر. اقرأ المزيد',
+		oioiContestDescription: ' مسابقة لطلاب المدارس للمنافسة في حل مجموعة من المشكلات الواقعية التي تتطلب تصميم خوارزميات الكمبيوتر. اقرأ المزيد',
 		ocpcTitle: 'مسابقة عمان الجامعية للبرمجة',
-		ocpcDescription: 'إنها منصة حيث يمكن لطلاب الجامعات والكليات عرض مهاراتهم في حل المشكلات في بيئة تنافسية. اقرأ المزيد',
+		ocpcDescription: 'مسابقة تجمع طلاب الجامعات والكليات فالسلطنة عمان لعرض مهاراتهم في حل المشكلات في بيئة تنافسية. اقرأ المزيد',
 		gpcContestTitle: 'مسابقة الخليج للبرمجة',
 		gpcContestDescription: 'مسابقة تجمع بين الطلاب الموهوبين والمبرمجين من دول الخليج لحل مشكلات خوارزمية صعبة في حد زمني محدد. اقرأ المزيد',
 		readmore: 'اقرأ المزيد',
@@ -131,11 +131,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const setLanguage = (language) => {
+    console.log('Changing language to:', language); // Debugging
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach((element) => {
         const translationKey = element.getAttribute("data-i18n");
+        console.log('Translating', translationKey, 'to', translations[language][translationKey]); // Debugging
         element.textContent = translations[language][translationKey];
     });
+
 
 
 
