@@ -47,7 +47,7 @@ const translations = {
 		sponsor: "الدعم",
 
 
-        contactTitle: 'اتصل بنا',
+        contactTitle: 'تواصل معنا',
         yourName: 'اسمك',
         yourEmail: 'بريدك الإلكتروني',
         subject: 'الموضوع',

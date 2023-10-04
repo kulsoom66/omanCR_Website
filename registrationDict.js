@@ -44,7 +44,7 @@ const translations = {
 		contact: "التواصل",
 		sponsor: "الدعم",
 
-        contestRegistrationTitle: 'روابط تسجيل مسابقات OCR',
+        contestRegistrationTitle: 'روابط التسجيل في مسابقات السباق',
         // beaverOioiTitle: 'بيفر وOIOI',
         beaverOioiLink: 'رابط التسجيل لمسابقة القندس والأولمبياد العماني للمعلوماتية',
         // ocpcGpcTitle: 'OCPC وGPC',

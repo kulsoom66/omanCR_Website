@@ -32,12 +32,12 @@ const translations = {
 
 
         navOverview: 'نظرة عامة',
-        navObjectives: 'الأهداف',
+        navObjectives: 'أهداف المسابقة',
         navSchedule: 'الجدول الزمني',
         navTargetGroup: 'الفئة المستهدفة',
         navPastProblems: 'الأسئلة السابقة',
         navGallery: 'معرض الصور',
-        navRegister: 'التسجيل',
+        navRegister: 'للتسجيل',
 
         beaverOverviewTitle: 'نظرة عامة على مسابقة القندس',
         beaverOverviewDescription: 'تعتبر تحديات البيفر برنامجًا عالميًا يسعى إلى تعزيز فهم علوم الحاسوب والتفكير الحسابي بين طلاب مختلف الأعمار في المدارس في جميع أنحاء العالم. بوجوده في أكثر من 50 دولة ومشاركة 3 ملايين طالب، صمم هذه المبادرة خصيصًا لإشعال حماسة في مجال الحوسبة لدى كل طالب.',

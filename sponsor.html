@@ -130,7 +130,8 @@
                 <div class="col-lg-7 quote-text py-5-s wow fadeIn" id="aboutMinS" data-wow-delay="0.5s">
                     <div class="p-lg-5-s pe-lg-0">
                         <div class="section-title text-start">
-                            <h3 class="text-primary mb-5" data-i18n="sponsorshipHeading">Become Sponsor</h3>
+                            <h3 class="text-primary mb-5" id="toRight" data-i18n="sponsorshipHeading">Become Sponsor
+                            </h3>
                         </div>
                         <p class="mb-4 pb-2" data-i18n="sponsorshipMessage">
                             If you wish to sponsor OCR, We greatly appreciate your support and we are
@@ -139,37 +140,70 @@
                         </p>
                         <form action="sponsor.php" method="post">
                             <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" name="name" placeholder="Full Name"
-                                        style="height: 45px; font-size: 14px;" data-i18n="fullName">
-                                </div>
-                                <div class="col-12 col-sm-6">
+
+
+                                <!-- <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control border-0" name="position"
                                         placeholder="Person's Position" style="height: 45px; font-size: 14px;"
                                         data-i18n="personPosition">
+                                    <label for="name" id="toRight" data-i18n="personPosition">Your Name</label>
+                                </div> -->
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                            data-i18n="fullName">
+                                        <label for="name" id="toRight" data-i18n="fullName">Your Name</label>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" name="company"
-                                        placeholder="Company's Name" style="height: 45px; font-size: 14px;"
-                                        data-i18n="companyName">
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="position" placeholder="Person's Position"
+                                            data-i18n="personPosition">
+                                        <label for="position" id="toRight" data-i18n="personPosition">Person's Position</label>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" name="field"
-                                        placeholder="Company Field" style="height: 45px; font-size: 14px;"
-                                        data-i18n="companyField">
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="companyName" placeholder="Company name"
+                                            data-i18n="companyName">
+                                        <label for="companyName" id="toRight" data-i18n="companyName">Company name</label>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" name="email" placeholder="Email"
-                                        style="height: 45px; font-size: 14px;" data-i18n="email">
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="companyField" placeholder="Company Field"
+                                            data-i18n="companyName">
+                                        <label for="companyField" id="toRight" data-i18n="companyField">Company Field</label>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" name="mobile" placeholder="Mobile"
-                                        style="height: 45px; font-size: 14px;" data-i18n="mobile">
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                            data-i18n="companyName">
+                                        <label for="email" id="toRight" data-i18n="email">Company Field</label>
+                                    </div>
                                 </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="mobile" placeholder="Contact Number"
+                                            data-i18n="companyName">
+                                        <label for="mobile" id="toRight" data-i18n="mobile">Contact Number</label>
+                                    </div>
+                                </div>
+
+
                                 <div class="col-12">
                                     <textarea class="form-control border-0" placeholder="Special Note" name="note"
                                         style="font-size: 14px;" data-i18n="specialNote"></textarea>
                                 </div>
+
+                                
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit"
                                         data-i18n="submitBtn">Submit</button>
