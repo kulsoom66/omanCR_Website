@@ -165,15 +165,16 @@
 
         /* CSS for individual slides */
         .slide {
-            display: none;
-            width: 100%;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            transform: translateX(0); /* Starting position */
+
         }
 
         img {
             max-width: 100%;
             height: auto;
             background-color: rgba(0, 0, 0, 0.8);
-
         }
 
         /* CSS for navigation buttons */
@@ -188,10 +189,14 @@
 
         .prev {
             left: 10px;
+            transform: translateX(-100%); /* Move the container 100% to the left */
+
         }
 
         .next {
             right: 10px;
+            transform: translateX(100%); /* Move the container 100% to the right */
+
         }
 
         /* CSS for text overlay */
@@ -205,44 +210,9 @@
             padding: 10px;
         }
 
-        .slider {
-            width: 300px;
-            /* Set the width of your slider */
-            overflow: hidden;
-            /* Hide the overflow to make sure only one image is visible at a time */
-        }
 
-        .slider img {
-            width: 100%;
-            /* Make sure the images take the full width of the slider container */
-            transition: transform 1s ease-in-out;
-            /* Apply a transition effect to the transform property */
-        }
-
-        /* Define keyframes for the animation */
-        @keyframes slide {
-            0% {
-                transform: translateX(0);
-            }
-
-            /* Start position */
-            100% {
-                transform: translateX(-100%);
-            }
-
-            /* End position */
-        }
-
-        /* Apply the animation to the images */
-        .slider img {
-            animation: slide 5s linear infinite;
-            /* Use the animation defined above, repeat infinitely */
-        }
-
-        /* Stop the animation on hover (optional) */
-        .slider:hover img {
-            animation-play-state: paused;
-        }
+ 
+    
     </style>
 </head>
 
@@ -409,6 +379,80 @@
         </div>
     </div>
     <!-- Projects End -->
+    
+
+       <!-- Carousel Start -->
+   <div class="container-fluid p-0 pb-5">
+    <div class="owl-carousel header-carousel position-relative">
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid-index" src="img/slider1.jpeg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                style="background: rgba(53, 53, 53, .5);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8 text-center">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                            <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                Extreme Problem Solvers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid-index" src="img/slider2.jpeg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                style="background: rgba(53, 53, 53, .5);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8 text-center">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                            <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                Extreme Problem Solvers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid-index" src="img/slider3.jpeg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                style="background: rgba(53, 53, 53, .5);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8 text-center">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                            <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                Extreme Problem Solvers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid-index" src="img/slider4.jpeg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                style="background: rgba(53, 53, 53, .5);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8 text-center">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                            <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                Extreme Problem Solvers</p>
+                            <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                            <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
 
     <!-- Events Start -->
     <div class="container-xxl py-5" style="background-color: #F5F5F5; display: flex;">
@@ -681,6 +725,8 @@
             } else if (index >= slides.length) {
                 currentSlide = 0;
             }
+            const offset = -currentSlide * 100; // 100% width per image
+            document.querySelector('.slide').style.transform = `translateX(${offset}%)`;
 
             slides.forEach((slide, i) => {
                 if (i === currentSlide) {
@@ -689,6 +735,13 @@
                     slide.style.display = 'none';
                 }
             });
+        }
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
         }
 
         function changeSlide(n) {

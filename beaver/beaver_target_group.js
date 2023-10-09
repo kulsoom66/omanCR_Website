@@ -15,6 +15,7 @@ const translations = {
         navRegister: 'Register',
         beaverTarget: 'Beaver Target Group',
         beaverTargetP: 'Students in Oman\'s educational system from the third primary grade to the third secondary grade',
+        beaverGallery: 'Beaver Gallery',
 
         selectLanguage: "Select a language",
         english: "English",
@@ -38,6 +39,7 @@ const translations = {
 
         beaverTarget: 'الفئة المستهدفة',
         beaverTargetP:'طلاب النظام التعليمي في عمان من الصف الثالث الابتدائي إلى الصف الثالث الثانوي',
+        beaverGallery: 'صور سابقة للمسابقة',
 
         selectLanguage: "إختر لغة",
         english: "الانجليزية",

@@ -31,7 +31,7 @@ const translations = {
         sponsor: "الدعم",
 
 
-        navOverview: 'نظرة عامة',
+        navOverview: 'نظرة العامة', 
         navObjectives: 'أهداف المسابقة',
         navSchedule: 'الجدول الزمني',
         navTargetGroup: 'الفئة المستهدفة',
