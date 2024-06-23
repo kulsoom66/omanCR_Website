@@ -11,33 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <style>
-    .icon-and-link {
-      display: flex;
-      align-items: center;
-      /* Vertically center the content */
-    }
 
-    .icon-and-link .fa {
-      margin-right: 5px;
-    }
-
-    /* Style for stacking elements when sidebar is not active */
-    #sidebar:not(.active) ul li span,
-    #sidebar:not(.active) ul li a {
-      display: block;
-      /* Stack elements above each other */
-    }
-
-    /* Style for displaying elements side by side with margin when sidebar is active */
-    #sidebar.active ul li span,
-    #sidebar.active ul li a {
-      display: inline-block;
-      /* Display elements side by side */
-      margin-right: 10px;
-      /* Add margin between them */
-    }
-  </style>
 </head>
 
 <body>
@@ -45,9 +19,14 @@
   <div class="wrapper d-flex align-items-stretch">
     <nav id="sidebar" class="active">
       <!-- <h1><a href="../index.html" class="logo">OCPC</a></h1> -->
+
+
+
       <a class="logo" href="#">
         <img src="beaver.png" alt="Your Logo" width="60" height="50">
       </a>
+
+
 
       <ul class="list-unstyled components mb-5" id="toRight">
         <li>
@@ -62,7 +41,7 @@
 
         <li>
           <a href="beaver_schedule.html" id="toRight"><span class="fa fa-cogs text-center"></span>
-          <span data-i18n="navSchedule" class="text-center">Schedule</span></a>
+            <span data-i18n="navSchedule" class="text-center">Schedule</span></a>
         </li>
 
         <li>
@@ -72,79 +51,85 @@
         </li>
 
         <li>
-          <a href="https://www.beaveregypt.org/practice" id="toRight"><span class="fa fa-paper-plane text-center"></span>
-          <span data-i18n="navPastProblems" class="text-center">Past Problems</span></a>
+          <a href="https://www.beaveregypt.org/practice" id="toRight"><span
+              class="fa fa-paper-plane text-center"></span>
+            <span data-i18n="navPastProblems" class="text-center">Past Problems</span></a>
         </li>
 
         <li>
-          <a href="beaver_gallery.html" id="toRight" ><span class="fa fa-sticky-note text-center"></span>
-          <span data-i18n="navGallery" class="text-center">Gallery</span></a>
+          <a href="beaver_gallery.html" id="toRight"><span class="fa fa-sticky-note text-center"></span>
+            <span data-i18n="navGallery" class="text-center">Gallery</span></a>
         </li>
 
         <li>
-          <a id="toRight" href="https://docs.google.com/forms/d/e/1FAIpQLSdbqJ3HGPbxhDBXbmxSlzrY9VyQcZAiYaVmwBybAqDAGzaBvw/viewform?usp=pp_url">
+          <a id="toRight"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdbqJ3HGPbxhDBXbmxSlzrY9VyQcZAiYaVmwBybAqDAGzaBvw/viewform?usp=pp_url">
             <span class="fa fa-paper-plane text-center"></span>
             <span data-i18n="navRegister" class="text-center">To Register</span></a>
         </li>
       </ul>
 
+
     </nav>
 
-    <!-- Page Content  -->
-    <div id="content" class="p-4 p-md-2">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button type="button" id="sidebarCollapse" class="btn btn-primary">
-            <i class="fa fa-bars"></i>
-            <span class="sr-only">Toggle Menu</span>
-          </button>
-          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="../index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../about.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../registration.html">REGISTRATION</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../contact.html">CONTACT</a>
-              </li>
-              <li class="nav-item">
-                <a href="../sponsor.html" class="nav-link">SPONSORSHIP</a>
-              </li>
-              <li class="nav-item">
-                <select id="selectLang" style="border: none;">
-                  <option value="en" data-i18n="english" selected>ENG</option>
-                  <option value="ar" data-i18n="arabic">ARB</option>
-                </select>
-              </li>
+  <!-- Page Content  -->
+  <div id="content" class="p-4 p-md-2">
 
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../registration.html">REGISTRATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a href="../sponsor.html" class="nav-link">SPONSORSHIP</a>
+            </li>
+            <li class="nav-item">
+              <select id="selectLang" style="border: none;">
+                <option value="en" data-i18n="english" selected>ENG</option>
+                <option value="ar" data-i18n="arabic">ARB</option>
+              </select>
+            </li>
+
+          </ul>
         </div>
-      </nav>
-
-      <h2 class="mb-4 ml-4 mr-4" id="toRight" data-i18n="beaverOverviewTitle">Beaver Overview</h2>
-      <p class="mb-4 ml-4 mr-4" id="toRight" data-i18n="beaverOverviewDescription">The Beaver Challenge is a global program
-        that seeks to foster the understanding of informatics and computational thinking among students of various ages
-        in schools worldwide. With a presence in more than 50 countries and a participation of 3 million students, this
-        initiative is specifically designed to ignite enthusiasm for the field of computing in every student.</p>
-
-
-      <div id="toRight" class="text-center">
-        <img style="height: 40%; width: 50%"  class="ml-4 mr-4" src="img/beaverimg.png" alt="no">
       </div>
+    </nav>
+
+    <h2 class="mb-4 ml-4 mr-4" id="toRight" data-i18n="beaverOverviewTitle">Beaver Overview</h2>
+    <p class="mb-4 ml-4 mr-4" id="toRight" data-i18n="beaverOverviewDescription">The Beaver Challenge is a global
+      program
+      that seeks to foster the understanding of informatics and computational thinking among students of various ages
+      in schools worldwide. With a presence in more than 50 countries and a participation of 3 million students, this
+      initiative is specifically designed to ignite enthusiasm for the field of computing in every student.</p>
+
+
+    <div id="toRight" class="text-center">
+      <img style="height: 40%; width: 50%" class="ml-4 mr-4" src="img/beaverimg.png" alt="no">
     </div>
+  </div>
 
   </div>
 

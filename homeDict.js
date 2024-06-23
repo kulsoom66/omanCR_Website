@@ -115,42 +115,17 @@ const translations = {
 		english: "الانجليزية",
 		arabic: "العربية",
 	},
-};// Function to initialize Owl Carousel
-function initializeCarousel() {
-	$(".header-carousel").owlCarousel({
-		// Configure your Owl Carousel options here
-		items: 1,
-		// Add other options as needed
-	});
-}
+};
 
-function refreshCarousel() {
-	const carousel = $(".header-carousel");
-	if (!carousel.data("owl.carousel")) {
-		initializeCarousel();
-	}
-}
-// Inside setLanguage function
-const carouselItems = $(".header-carousel .owl-item"); // Get all carousel items
-
-carouselItems.each(function(index, item) {
-	const translationKey = $(item).find("[data-i18n]").attr("data-i18n");
-	$(item).find(".testimonial-text").text(translations[language][translationKey]);
-});
 
 
 const languageSelector = document.getElementById("selectLang");
 languageSelector.addEventListener("change", (event) => {
 	setLanguage(event.target.value);
 	localStorage.setItem("lang", event.target.value);
-	refreshCarousel(); // Refresh the carousel after changing language
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-	const language = localStorage.getItem("lang") || "en";
-	setLanguage(language);
-	initializeCarousel(); // Initialize the carousel when the page loads
-});
+
 
 const setLanguage = (language) => {
 	console.log('Changing language to:', language); // Debugging
@@ -158,14 +133,13 @@ const setLanguage = (language) => {
 	const elements = document.querySelectorAll("[data-i18n]");
 	elements.forEach((element) => {
 		const translationKey = element.getAttribute("data-i18n");
-		console.log('Translating', translationKey, 'to', translations[language][translationKey]); // Debugging
 		element.textContent = translations[language][translationKey];
 	});
 
-	// Set the document direction based on the language
+	// // Set the document direction based on the language
 	document.dir = language === "ar" ? "rtl" : "ltr";
 
-	// Set text alignment based on document direction
+	// // Set text alignment based on document direction
 	const targetElements = document.querySelectorAll("#toRight, #toRight2");
 	targetElements.forEach((element) => {
 		element.style.textAlign = document.dir === "rtl" ? "right" : "left";

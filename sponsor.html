@@ -138,9 +138,8 @@
                             excited to explore partnership opportunities that can make this event even more successful.
                             Please fill the following form, and we will be in contact with you shortly.
                         </p>
-                        <form action="sponsor.php" method="post">
+                        <form action="mailto:events@codeacademy.om" method="post" enctype="text/plain">
                             <div class="row g-3">
-
 
                                 <!-- <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control border-0" name="position"
@@ -159,7 +158,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="position" placeholder="Person's Position"
+                                        <input type="text" class="form-control" id="position" name="position" placeholder="Person's Position"
                                             data-i18n="personPosition">
                                         <label for="position" id="toRight" data-i18n="personPosition">Person's Position</label>
                                     </div>
@@ -167,7 +166,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="companyName" placeholder="Company name"
+                                        <input type="text" class="form-control" id="companyName" name="companyname" placeholder="Company name"
                                             data-i18n="companyName">
                                         <label for="companyName" id="toRight" data-i18n="companyName">Company name</label>
                                     </div>
@@ -175,7 +174,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="companyField" placeholder="Company Field"
+                                        <input type="text" class="form-control" id="companyField" name="companyfield" placeholder="Company Field"
                                             data-i18n="companyName">
                                         <label for="companyField" id="toRight" data-i18n="companyField">Company Field</label>
                                     </div>
@@ -183,7 +182,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email"
                                             data-i18n="companyName">
                                         <label for="email" id="toRight" data-i18n="email">Company Field</label>
                                     </div>
@@ -191,7 +190,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="mobile" placeholder="Contact Number"
+                                        <input type="text" class="form-control" id="mobile" name="number" placeholder="Contact Number"
                                             data-i18n="companyName">
                                         <label for="mobile" id="toRight" data-i18n="mobile">Contact Number</label>
                                     </div>
@@ -357,6 +356,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="sponsorDict.js"></script>
+
 
 </body>
 

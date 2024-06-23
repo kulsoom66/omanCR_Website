@@ -153,66 +153,10 @@
             border: none !important;
         }
 
-
-        .slider-container {
-            max-width: 100%;
-            overflow: hidden;
-            position: relative;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.8);
-
-        }
-
-        /* CSS for individual slides */
-        .slide {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            transform: translateX(0); /* Starting position */
-
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        /* CSS for navigation buttons */
-        .prev,
-        .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        .prev {
-            left: 10px;
-            transform: translateX(-100%); /* Move the container 100% to the left */
-
-        }
-
-        .next {
-            right: 10px;
-            transform: translateX(100%); /* Move the container 100% to the right */
-
-        }
-
-        /* CSS for text overlay */
-        .text-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            padding: 10px;
-        }
-
-
- 
-    
+        
+        .owl-carousel{
+            direction: ltr !important;
+           }
     </style>
 </head>
 
@@ -256,31 +200,78 @@
     </nav>
     <!-- Navbar End -->
 
-    <div class="slider-container">
-        <!-- Slides -->
-        <div class="slide">
-            <img src="img/slider1.jpeg" alt="Slide 1">
-
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid-index" src="img/slider1.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, .5);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                    Extreme Problem Solvers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid-index" src="img/slider2.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, .5);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                    Extreme Problem Solvers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid-index" src="img/slider3.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, .5);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                    Extreme Problem Solvers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid-index" src="img/slider4.jpeg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(53, 53, 53, .5);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
+                                    Extreme Problem Solvers</p>
+                                <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="slide">
-            <img src="img/slider2.jpeg" alt="Slide 2">
-        </div>
-        <div class="slide">
-            <img src="img/slider3.jpeg" alt="Slide 3">
-        </div>
-        <div class="slide">
-            <img src="img/slider4.jpeg" alt="Slide 3">
-        </div>
-
-        <div class="text-overlay">
-            <h1>Oman Code Race</h1>
-            <p>Clash of Minds;TopCoders Factory;Extreme Problem Solvers</p>
-        </div>
-        <!-- Navigation Buttons -->
-        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
-        <span class="next" onclick="changeSlide(1)">&#10095;</span>
     </div>
-
+    <!-- Carousel End -->
 
     <!-- Projects Start -->
     <div class="container-xxl py-5" style="background-color: #F5F5F5; padding-top:3rem;" id="toRight">
@@ -304,10 +295,11 @@
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <h6 class="lh-base mb-0" id="toRight" data-i18n="beaverContestTitle">Beaver Contest</h6>
-                            <p id="toRight" data-i18n="beaverContestDescription" style="display: inline;">It is a program that seeks to foster
+                            <p id="toRight" data-i18n="beaverContestDescription" style="display: inline;">It is a
+                                program that seeks to foster
                                 the
                                 understanding of informatics and computational thinking among students of various ages
-                                in schools </p><a href="beaver/beaver_overview.html" data-i18n="readmore">  Read more</a>
+                                in schools </p><a href="beaver/beaver_overview.html" data-i18n="readmore"> Read more</a>
                         </div>
                     </div>
                 </div>
@@ -325,11 +317,12 @@
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <h6 class="lh-base mb-0" id="toRight" data-i18n="oioiContestTitle">OIOI Contest</h6>
-                            <p id="toRight" data-i18n="oioiContestDescription" style="display: inline;">It is contest for general education
+                            <p id="toRight" data-i18n="oioiContestDescription" style="display: inline;">It is contest
+                                for general education
                                 school students to
                                 compete in solving a set of real-life problems that require the design of computer
                                 algorithms</p>
-                                <a href="oioi/oioi_overview.html" data-i18n="readmore">  Read more</a>
+                            <a href="oioi/oioi_overview.html" data-i18n="readmore"> Read more</a>
                         </div>
                     </div>
                 </div>
@@ -346,10 +339,11 @@
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <h6 class="lh-base mb-0" id="toRight" data-i18n="ocpcTitle">OCPC Contest</h6>
-                            <p id="toRight" data-i18n="ocpcDescription" style="display: inline;">It is a platform where university and college
+                            <p id="toRight" data-i18n="ocpcDescription" style="display: inline;">It is a platform where
+                                university and college
                                 students can
                                 showcase their problem-solving skills in a competitive environment</p>
-                                    <a href="ocpc/ocpc_overview.html" data-i18n="readmore">  Read more</a>
+                            <a href="ocpc/ocpc_overview.html" data-i18n="readmore"> Read more</a>
 
                         </div>
                     </div>
@@ -368,10 +362,12 @@
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <h6 class="lh-base mb-0" id="toRight" data-i18n="gpcContestTitle">GPC Contest</h6>
-                            <p id="toRight" data-i18n="gpcContestDescription" style="display: inline;">It brings together talented students and
+                            <p id="toRight" data-i18n="gpcContestDescription" style="display: inline;">It brings
+                                together talented students and
                                 programmers
-                                from Gulf countries to solve challenging algorithmic problems within a set time limit</p>
-                                    <a href="gpc/gpc_overview.html" data-i18n="readmore">  Read more</a>
+                                from Gulf countries to solve challenging algorithmic problems within a set time limit
+                            </p>
+                            <a href="gpc/gpc_overview.html" data-i18n="readmore"> Read more</a>
                         </div>
                     </div>
                 </div>
@@ -379,80 +375,6 @@
         </div>
     </div>
     <!-- Projects End -->
-    
-
-       <!-- Carousel Start -->
-   <div class="container-fluid p-0 pb-5">
-    <div class="owl-carousel header-carousel position-relative">
-        <div class="owl-carousel-item position-relative">
-            <img class="img-fluid-index" src="img/slider1.jpeg" alt="">
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                style="background: rgba(53, 53, 53, .5);">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-8 text-center">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
-                            <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
-                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
-                                Extreme Problem Solvers</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="owl-carousel-item position-relative">
-            <img class="img-fluid-index" src="img/slider2.jpeg" alt="">
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                style="background: rgba(53, 53, 53, .5);">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-8 text-center">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
-                            <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
-                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
-                                Extreme Problem Solvers</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="owl-carousel-item position-relative">
-            <img class="img-fluid-index" src="img/slider3.jpeg" alt="">
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                style="background: rgba(53, 53, 53, .5);">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-8 text-center">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
-                            <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
-                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
-                                Extreme Problem Solvers</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="owl-carousel-item position-relative">
-            <img class="img-fluid-index" src="img/slider4.jpeg" alt="">
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                style="background: rgba(53, 53, 53, .5);">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-8 text-center">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To </h5>
-                            <h1 class="display-3 text-white animated slideInDown mb-4">Oman Code Race</h1>
-                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Clash of Minds; TopCoders Factory;
-                                Extreme Problem Solvers</p>
-                            <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                            <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Carousel End -->
 
     <!-- Events Start -->
     <div class="container-xxl py-5" style="background-color: #F5F5F5; display: flex;">
@@ -461,32 +383,6 @@
             <div class="section-title text-center">
                 <h3 class="text-primary mb-5" data-i18n="ocrEventsTitle">OCR Events</h3>
             </div>
-            <!-- <div class="rectangle-box wow fadeIn">
-                <div class="container">
-                    <h6 class="mt-3" style="margin-bottom: 0px;" data-i18n="beaverContest">Beaver Contest</h6>
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex align-items-center">
-                            <span><i class="space fas fa-clock clock-icon mr-2"></i>8th.Oct - 10th.Oct, 2023 </span>
-                            <span><i class="space fas fa-map-marker-alt location-icon mr-2"style="margin-left: 10px;"></i><span data-i18n="online"> Online</span></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="rectangle-box wow fadeIn">
-                <div class="container">
-                    <h6 class="mt-3" style="margin-bottom: 0px;" data-i18n="omanOlympiadInInformatics">Oman Olympiad in
-                        Informatics</h6>
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex align-items-center">
-                            <span><i class="space fas fa-clock clock-icon mr-2"></i> 28th.Oct - 29th.Oct, 2023</span>
-                            <span><i class="space fas fa-map-marker-alt location-icon mr-2"
-                                    style="margin-left: 10px;"></i><span data-i18n="sultanQaboosUniversity">Sultan
-                                    Qaboos University</span></span>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
-            <!--  -->
             <div class="rectangle-box wow fadeIn">
                 <div class="container">
                     <!-- Header -->
@@ -562,7 +458,45 @@
 
     <!-- Testimonial End -->
 
-
+    <!-- Sponsors -->
+    <div class="container-xxl py-5 wow fadeInUp" id="toRight" data-wow-delay="0.1s" style="background-color: #F5F5F5; display: flex;">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3 class="text-primary mb-5" style="margin: 3rem;">Sponsors</h3>
+            </div>
+            <!-- Sponsor Rows -->
+            <div class="row">
+                <!-- Organizing Partner -->
+                
+                <div class="col-12 col-md-3 text-center">
+                    <h6>Organizing Partner</h6>
+                    <img src="img/ministerylogo1.png" alt="Image 1" width="100" height="70">
+                </div>
+                
+                <!-- Academic Partner -->
+                <div class="col-12 col-md-3 text-center">
+                    <h6>Academic Partner</h6>
+                    <img src="img/Sultan_Qaboos_University_Logo.png" alt="Image 2" width="100" height="80">
+                </div>
+                
+                <!-- Strategic Partners -->
+                <div class="col-12 col-md-3 text-center">
+                    <h6>Strategic Partners</h6>
+                    <img src="img/OQ-Logo.png" alt="Image 3"  width="100" height="70" style="display: inline; margin-right:10px">
+                    <img src="img/OMIFCO logo 2023 PDF -1.png" alt="Image 4" width="100" height="70">
+                </div>
+                
+                <!-- Scientific Operator -->
+                <div class="col-12 col-md-3 text-center">
+                    <h6>Scientific Operator</h6>
+                    <img src="img/CodeAcademyLogo.png" alt="Image 5" width="100" height="70">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- End sponsers -->
     <!-- Footer Start Boostrap -->
     <footer class="text-center text-lg-start text-white" style="background-color: #353535">
         <div class="container p-4 pb-0">
@@ -592,18 +526,22 @@
 
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="footerUsefulLinks" style="color: white;">
+                        <h6 class="text-uppercase mb-4 font-weight-bold" data-i18n="footerUsefulLinks"
+                            style="color: white;">
                             Useful Links</h6>
                         <!-- <p data-i18n="footerUsefulLinks"><a>Codeforce website</a> -->
                         <ul style="list-style: none;">
                             <li>
-                                <a id="toRight2" href="https://codeforces.com/" data-i18n="footerCodeforces">Codeforces</a>
+                                <a id="toRight2" href="https://codeforces.com/"
+                                    data-i18n="footerCodeforces">Codeforces</a>
                             </li>
                             <li>
-                                <a id="toRight2" href="https://www.codechef.com/" data-i18n="footerCodechef">Codechef</a>
+                                <a id="toRight2" href="https://www.codechef.com/"
+                                    data-i18n="footerCodechef">Codechef</a>
                             </li>
                             <li>
-                                <a id="toRight2" href="https://www.hackerrank.com/" data-i18n="footerHackerRank">Heckerrank</a>
+                                <a id="toRight2" href="https://www.hackerrank.com/"
+                                    data-i18n="footerHackerRank">Heckerrank</a>
                             </li>
                             <li>
                                 <a id="toRight2" href="https://practice.geeksforgeeks.org/problem-of-the-day"
@@ -618,7 +556,8 @@
 
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 data-i18n="footerInternationalContests" class="text-uppercase mb-4 font-weight-bold" style="color: white;">
+                        <h6 data-i18n="footerInternationalContests" class="text-uppercase mb-4 font-weight-bold"
+                            style="color: white;">
                             International programming contests
                         </h6>
                         <p>
@@ -640,11 +579,12 @@
 
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 data-i18n="footerContact" class="text-uppercase mb-4 font-weight-bold" style="color: white;">
+                        <h6 data-i18n="footerContact" class="text-uppercase mb-4 font-weight-bold"
+                            style="color: white;">
                             Contact</h6>
                         <p data-i18n="footerAddress"><i class="fas fa-home mr-3"></i> J4JP+VR, Seeb, Mabeela North</p>
                         <p><i id="toRight" class="fas fa-envelope mr-3"></i> info@ca-oman.net</p>
-                        <p ><i id="toRight" class="fas fa-phone mr-3"></i> 97451004</p>
+                        <p><i id="toRight" class="fas fa-phone mr-3"></i> 97451004</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -715,49 +655,7 @@
 
     <!-- JS Dictionary -->
     <script src="homeDict.js"></script>
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
 
-        function showSlide(index) {
-            if (index < 0) {
-                currentSlide = slides.length - 1;
-            } else if (index >= slides.length) {
-                currentSlide = 0;
-            }
-            const offset = -currentSlide * 100; // 100% width per image
-            document.querySelector('.slide').style.transform = `translateX(${offset}%)`;
-
-            slides.forEach((slide, i) => {
-                if (i === currentSlide) {
-                    slide.style.display = 'block';
-                } else {
-                    slide.style.display = 'none';
-                }
-            });
-        }
-        function prevSlide() {
-            showSlide(currentSlide - 1);
-        }
-
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-
-        function changeSlide(n) {
-            currentSlide += n;
-            showSlide(currentSlide);
-        }
-
-        function autoSlide() {
-            changeSlide(1); // Move to the next slide
-        }
-
-        showSlide(currentSlide);
-
-        // Automatically transition between slides every 3 seconds (adjust as needed)
-        setInterval(autoSlide, 2000);
-    </script>
 </body>
 
 </html>
